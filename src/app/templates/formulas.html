@@ -1,0 +1,16 @@
+<div class="tile" title="Basal Metabolic Rate">
+	<h1>BMR:</h1>
+	<h2>{{bmr}} Calories</h2>
+</div>
+
+<div title="Body Mass Index"
+	 [class]="(bmi | bmi) + ' tile'">
+	<h1>BMI:</h1>
+	<h2>{{bmi}}</h2>
+	<h2>{{bmi | bmi}}</h2>
+</div>
+
+<div title="Target Heart Rate" class="tile">
+	<h1>THR (50% &mdash; 85%)</h1>
+	<h2>{{thr.min}} &mdash; {{thr.max}} BPM</h2>
+</div>

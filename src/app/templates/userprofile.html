@@ -1,0 +1,54 @@
+<form [ng-form-model]="myForm">
+
+<!-- toggle unit of measure -->
+<div class="unit">
+	<div class="label">Click to Toggle Unit of Measure</div>
+	<div class="labelTarget">
+		<button (click)="toggleUom()">{{uomLabel}}</button>
+	</div>
+</div>
+
+<!-- toggle gender -->
+<div class="unit">
+	<div class="label">Click to Toggle Gender</div>
+	<div class="labelTarget">
+		<button (click)="toggleGender()">{{genderLabel}}</button>
+	</div>
+</div>
+
+<!-- set height -->
+<div class="unit">
+	<div class="label">Height:</div>
+	<div class="labelTarget">
+		{{minHeight | height:false}}
+		<input type="range" step="1" [min]="minHeight" [max]="maxHeight" 
+		[(ng-model)]="heightValue"/>
+		{{maxHeight | height:false}}
+		<br/>
+		{{userProfile.heightInches | height:true}}
+	</div>
+</div>
+
+<!-- set weight -->
+<div class="unit">
+	<div class="label">Weight ({{minWeight}} - {{maxWeight}}):</div>
+	<div class="labelTarget">
+		<input  
+		type="number" required=""
+		[(ng-model)]="weightValue"
+		ng-control="weight"
+		#weight="form" [class.error]="!weight.valid"/>
+		{{weightUom}}.
+	</div>
+</div>
+
+<!-- set age -->
+<div class="unit">
+	<div class="label">Age (13 - 120):</div>
+	<div class="labelTarget">
+		<input id="ageFrm" type="number" required="" min="13" max="120" [(ng-model)]="ageValue"
+		 #age="form" [class.error]="!age.valid"	/>
+	</div>
+</div>
+
+</form>

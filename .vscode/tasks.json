@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "command": "npm",
+  "windows": {
+    "command": "npm.cmd"
+  },
+  "tasks": [
+    {
+      // Build task, Ctrl+Shift+B
+      // "npm install --loglevel info"
+      "taskName": "run-script",
+      "isBuildCommand": true,
+      "args": ["tsc"]
+    },
+    {
+      // "npm start"
+      "taskName": "start",
+      "args": []
+    }
+  ]
+}

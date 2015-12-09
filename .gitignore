@@ -1,0 +1,7 @@
+.tmp
+.bat
+*.js
+*.js.map
+node_modules
+*~
+.idea/
