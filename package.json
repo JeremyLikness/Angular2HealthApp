@@ -19,7 +19,8 @@
     "url" : "https://github.com/JeremyLikness/Angular2HealthApp.git"    
   },
   "dependencies": {
-    "angular2": "2.0.0-alpha.48",
-    "systemjs": "0.19.2"
+    "angular2": "2.0.0-alpha.50",
+    "systemjs": "^0.19.2",
+    "reflect-metadata": "^0.1.2"
   }
 }

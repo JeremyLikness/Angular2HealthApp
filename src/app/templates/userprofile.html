@@ -37,7 +37,7 @@
 		type="number" required=""
 		[(ng-model)]="weightValue"
 		ng-control="weight"
-		#weight="form" [class.error]="!weight.valid"/>
+		#weight="ngForm" [class.error]="!weight.valid"/>
 		{{weightUom}}.
 	</div>
 </div>
@@ -47,7 +47,7 @@
 	<div class="label">Age (13 - 120):</div>
 	<div class="labelTarget">
 		<input id="ageFrm" type="number" required="" min="13" max="120" [(ng-model)]="ageValue"
-		 #age="form" [class.error]="!age.valid"	/>
+		 #age="ngForm" [class.error]="!age.valid"	/>
 	</div>
 </div>
 
