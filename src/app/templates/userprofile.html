@@ -46,8 +46,14 @@
 <div class="unit">
 	<div class="label">Age (13 - 120):</div>
 	<div class="labelTarget">
-		<input id="ageFrm" type="number" required="" min="13" max="120" [(ng-model)]="ageValue"
-		 #age="ngForm" [class.error]="!age.valid"	/>
+		<input id="ageFrm" 
+		       type="number" 
+		       required="" 
+		       min="13" 
+		       max="120" 
+		       [(ng-model)]="ageValue"
+		       #age="ngForm" 
+		       [class.error]="!age.valid"/>
 	</div>
 </div>
 
