@@ -1,5 +1,5 @@
-import {Inject, Control, ControlGroup, Component, 
-	FORM_DIRECTIVES, FormBuilder} from 'angular2/angular2';
+import {Control, ControlGroup, FORM_DIRECTIVES, FormBuilder} from 'angular2/common';
+import {Inject, Component} from 'angular2/core';
 import {IUserProfile} from '../common/UserProfile';
 import {IUnitOfMeasureState} from '../common/UnitOfMeasureState';
 import {IConversions} from '../common/Conversions';
@@ -33,8 +33,8 @@ export class ProfileComponent {
 	}
 	
 	private weightValidator(that: ProfileComponent, c: Control): any {
-	var weight: number;
-	if (c.value === null || isNaN(c.value)) {
+	var weight: number;    
+	if (c.value === null || isNaN(c.value)) {        
 		return {
 			required: true
 		};

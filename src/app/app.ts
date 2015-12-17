@@ -1,4 +1,6 @@
-import {bootstrap, provide, FORM_DIRECTIVES, ControlContainer, Component} from 'angular2/angular2';
+import {bootstrap} from 'angular2/platform/browser';
+import {provide, Component} from 'angular2/core';
+import {FORM_DIRECTIVES, ControlContainer} from 'angular2/common';
 import {IUserProfile, UserProfile} from './common/UserProfile';
 import {IUnitOfMeasureState, UnitOfMeasureState} from './common/UnitOfMeasureState';
 import {IConversions, Conversions} from './common/Conversions';

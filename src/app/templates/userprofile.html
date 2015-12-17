@@ -1,4 +1,4 @@
-<form [ng-form-model]="myForm">
+<form [ngFormModel]="myForm">
 
 <!-- toggle unit of measure -->
 <div class="unit">
@@ -21,8 +21,11 @@
 	<div class="label">Height:</div>
 	<div class="labelTarget">
 		{{minHeight | height:false}}
-		<input type="range" step="1" [min]="minHeight" [max]="maxHeight" 
-		[(ng-model)]="heightValue"/>
+		<input type="range" 
+        step="1" 
+        [min]="minHeight" 
+        [max]="maxHeight" 
+		[(ngModel)]="heightValue"/>
 		{{maxHeight | height:false}}
 		<br/>
 		{{userProfile.heightInches | height:true}}
@@ -34,8 +37,9 @@
 	<div class="label">Weight ({{minWeight}} - {{maxWeight}}):</div>
 	<div class="labelTarget">
 		<input  
-		type="number" required=""
-		[(ng-model)]="weightValue"
+		type="number" 
+        required=""
+		[(ngModel)]="weightValue"
 		ng-control="weight"
 		#weight="ngForm" [class.error]="!weight.valid"/>
 		{{weightUom}}.
@@ -51,9 +55,9 @@
 		       required="" 
 		       min="13" 
 		       max="120" 
-		       [(ng-model)]="ageValue"
+		       [(ngModel)]="ageValue"
 		       #age="ngForm" 
-		       [class.error]="!age.valid"/>
+		       [class.error]="!age.valid"/>years
 	</div>
 </div>
 

@@ -1,4 +1,5 @@
-import {Attribute, Control, Directive, forwardRef, Provider, NG_VALIDATORS} from "angular2/angular2";
+import {Attribute, Directive, forwardRef, Provider} from "angular2/core";
+import {Control, NG_VALIDATORS} from 'angular2/common';
 import {HealthAppCustomValidators} from "./customValidators";
 
 const MIN_VALIDATOR = new Provider(NG_VALIDATORS, {useExisting: 

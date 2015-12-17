@@ -1,4 +1,4 @@
-import {Inject, Component} from 'angular2/angular2';
+import {Inject, Component} from 'angular2/core';
 import {IUserProfile} from '../common/UserProfile';
 import {BmiPipe} from '../pipes/BmiPipe';
 import {formulaBmr} from '../common/formulaBmr';
