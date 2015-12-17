@@ -39,9 +39,9 @@
 		<input  
 		type="number" 
         required=""
-		[(ngModel)]="weightValue"
 		ngControl="weight"
-		#weightCtrl="ngForm" [class.error]="!weightCtrl.valid"/>
+		#weightCtrl="ngForm" 
+        [class.error]="!weightCtrl.valid"/>
 		{{weightUom}}.
 	</div>
 </div>
