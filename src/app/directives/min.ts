@@ -6,7 +6,7 @@ const MIN_VALIDATOR = new Provider(NG_VALIDATORS, {useExisting:
   forwardRef(() => MinValidator), multi:true});
 
 @Directive({
-  selector: '[min][ng-control],[min][ng-form-control],[min][ng-model]',
+  selector: '[min][ngControl],[min][ngFormControl],[min][ngModel]',
   providers: [MIN_VALIDATOR]
 })
 export class MinValidator {

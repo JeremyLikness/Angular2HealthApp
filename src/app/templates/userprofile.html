@@ -40,8 +40,8 @@
 		type="number" 
         required=""
 		[(ngModel)]="weightValue"
-		ng-control="weight"
-		#weight="ngForm" [class.error]="!weight.valid"/>
+		ngControl="weight"
+		#weightCtrl="ngForm" [class.error]="!weightCtrl.valid"/>
 		{{weightUom}}.
 	</div>
 </div>

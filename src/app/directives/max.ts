@@ -6,7 +6,7 @@ const MAX_VALIDATOR = new Provider(NG_VALIDATORS, {useExisting:
   forwardRef(() => MaxValidator), multi:true});
 
 @Directive({
-  selector: '[max][ng-control],[max][ng-form-control],[max][ng-model]',
+  selector: '[max][ngControl],[max][ngFormControl],[max][ngModel]',
   providers: [MAX_VALIDATOR]
 })
 export class MaxValidator {
