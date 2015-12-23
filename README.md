@@ -1,4 +1,4 @@
-# Angular2HealthApp
+# Angular 2 Health App
 
 [Angular 1.x Health App](https://github.com/JeremyLikness/AngularHealthApp) Ported to AngularJS 2.0 (alpha) to learn the new Angular and understand pain points of migration. Read the [Angular migration](http://ivision.com/blog/changes-angular-2-migration-case-study/) blog post for analysis and commentary.
 
